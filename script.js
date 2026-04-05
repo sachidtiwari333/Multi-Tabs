@@ -85,3 +85,7 @@ div.onmouseout = () => div.style.backgroundColor = "#2a2a2a";
     postsDiv.appendChild(div);
   });
 }
+function clearAll() {
+    localStorage.clear();      // remove all stored posts
+    displayPosts([]);          // clear the UI
+}
